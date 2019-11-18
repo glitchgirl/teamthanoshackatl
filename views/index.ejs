@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body>  
+        <ul>
+            <li><a href="/admin">Admin</a></li>
+        </ul>
+        <div class="container">
+        <form name="myForm" method="post" action = "" enctype="multipart/form-data">
+            First Name:
+            <input id="fname" type="text" placeholder="First Name" maxlength="30" name="fname" id="fname" required>
+            Last Name:
+            <input id="lname" type="text" placeholder="Last Name" maxlength="30" name="lname" id="lname" required>
+            E-mail:
+            <input type="email" placeholder="JohnDoe@gmail.com" maxlength="63" name="email" id= "email" required>
+            Event Name:
+            <select id="event" name ="event">
+                <option value="event1"><%= third %></option>
+                <option value="event2"><%= second %></option>
+                <option value="event3"><%= first %></option>
+            </select><br>
+            <b><button id="button" type="submit" value="Submit">Submit</button>
+        </form>
+        </div>
+        <img src="logo.jpg" alt="logo" class="polaroid">
+    </body>
+</html>
